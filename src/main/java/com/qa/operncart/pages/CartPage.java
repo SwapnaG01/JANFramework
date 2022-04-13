@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class CartPage {
 	
-	private By cart=By.id("cart");
+	private By cart1=By.id("cart");
 	public void addCart()
 	{
 		System.out.println("add to cart is done");
