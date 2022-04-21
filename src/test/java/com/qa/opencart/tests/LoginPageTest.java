@@ -50,7 +50,7 @@ public class LoginPageTest extends BaseTest {
 	@Severity(SeverityLevel.BLOCKER)
 	public void loginTest() {
 		accPage=loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
-	    Assert.assertTrue(accPage.isAccountPageHeaderExist());
+	    Assert.assertTrue(accPage.isAccountsPageHeaderExist());
 	}
 	
     @Test

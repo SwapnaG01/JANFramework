@@ -19,7 +19,7 @@ public class AccountsPageTest extends BaseTest{
 	@Test
 	public void accountsPageTitleTest()
 	{
-		String actAccountPageTitle=accPage.getAccountPageTitle();
+		String actAccountPageTitle=accPage.getAccountsPageTitle();
 	System.out.println(actAccountPageTitle);
 	Assert.assertEquals(actAccountPageTitle,Constants.ACCOUNTS_PAGE_TITLE);
 	}
@@ -27,7 +27,7 @@ public class AccountsPageTest extends BaseTest{
     @Test
     public void accountPageHeaderTest()
     {
-    	Assert.assertTrue(accPage.isAccountPageHeaderExist());
+    	Assert.assertTrue(accPage.isAccountsPageHeaderExist());
     }
     @Test
     public void searchExistTest()
@@ -37,7 +37,7 @@ public class AccountsPageTest extends BaseTest{
     @Test
     public void accSectionsTest()
     {
-    	List<String> actSecList=accPage.getAccountPageSectionsList();
+    	List<String> actSecList=accPage.getAccountsPageSectionsList();
    System.out.println("Accounts section list:"+actSecList);
    Assert.assertEquals(actSecList,Constants.ACCOUNTS_SECTIONS_LIST);
     

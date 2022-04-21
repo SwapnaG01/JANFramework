@@ -39,7 +39,7 @@ public class ProductInfoPageTest extends BaseTest {
 	{
 		searchResultsPage=accPage.doSearch("MacBook");
 		productInfoPage=searchResultsPage.selectProduct("MacBook Air");
-	   Assert.assertTrue(productInfoPage.getProductImagesCount()==Constants.MACBOOK_IMAGES_COUNT);
+	   Assert.assertTrue(productInfoPage.getPorductImagesCount()==Constants.MACBOOK_IMAGES_COUNT);
 	}
 	
 	

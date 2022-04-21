@@ -3,6 +3,8 @@ package com.qa.operncart.pages;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,14 +36,14 @@ public class ProductInfoPage {
 		return eleUtil.doElementgettext(productHeader).trim();
 	}
 
-	public int getProductImagesCount() {
+	public int getPorductImagesCount() {
 		return eleUtil.waitForElementsToBeVisible(productImages, Constants.DEFAULT_TIME_OUT).size();
 	}
 
 	public Map<String,String> getProductInfo() {
 		productInfoMap = new LinkedHashMap<String, String>();
 		productInfoMap.put("productname", getProductHeaderText());
-		productInfoMap.put("productimagescount", String.valueOf(getProductImagesCount()));
+		productInfoMap.put("productimagescount", String.valueOf(getPorductImagesCount()));
 		getProductMetaData();
 		getProductPriceData();
 		return productInfoMap;
