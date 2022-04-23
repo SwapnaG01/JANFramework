@@ -21,11 +21,11 @@
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-     <test name="Open Cart Login Page Negative Test">
+    <!-- <test name="Open Cart Login Page Negative Test">
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageNegativeTest" />
 		</classes>
-	</test>
+	</test>-->
 
 	<test name="Open Cart Accounts Page Test">
 		<classes>
